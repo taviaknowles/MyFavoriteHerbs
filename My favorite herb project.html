@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final project for basic</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        0deg,
+        rgb(242, 191, 204) 0%,
+        rgb(210, 203, 232) 100%
+      );
+    }
+    h1 {
+      color: #f15da7;
+      font-size: 48px;
+      font-weight: 100;
+      text-decoration: underline;
+      text-align: center;
+    }
+    h2 {
+      color: #f15da7;
+      font-size: 30px;
+      font-weight: 0;
+      text-align: center;
+    }
+    img {
+      width: 400px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 20px;
+    }
+    p {
+      font-size: 20px;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      font-size: 25px;
+      padding: 25px;
+      background: #f15da7;
+      color: white;
+      border: 1px solid 885;
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+      border: 1px solid white;
+      cursor: pointer;
+    }
+    button:hover {
+      color: #f15da7;
+      background: white;
+      border: 1px solid white;
+    }
+    Span {
+      text-decoration: underline;
+    }
+
+    div {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <br />
+
+    <h1>My Favorite Herb</h1>
+
+    <h2><strong>Lemon Balm</strong></h2>
+
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/7/70/Lemon_balm_plant.jpg"
+      alt=""
+      width="400"
+    />
+    <br />
+    <hr />
+    <p>
+      Lemon balm AKA (Melissa officinalis), a member of the mint family, is
+      considered a calming herb. It was used as far back as the Middle Ages to
+      reduce stress and anxiety, promote sleep, improve appetite, and ease pain
+      and discomfort from indigestion (including gas and bloating, as well as
+      colic).
+      <a href="https://www.britannica.com/plant/lemon-balm" target="_blank"
+        ><span>Learn More</span></a
+      >
+    </p>
+    <hr />
+    <br />
+    <button class="Buybutton">Click Here</button> <br />
+
+    <div><p>👩🏽‍💻 coded by Tavia knowles 👩🏽‍💻</p></div>
+    <script>
+      function handleClick() {
+        let name = prompt("what is your name?");
+        let email = prompt("what is your email address?");
+        let emoji = prompt("what is your favorite Emoji?");
+        let familiar = prompt("Are familiar with Lemom Balm?");
+        if (familiar.toLowerCase() === "no") {
+          alert("Learn more about Lemon Balm by clicking the link below");
+        } else if (familiar.toLowerCase() === "yes") {
+          alert("GREAT!");
+        }
+
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch by email. Meanwhile, learn more about Herbs by clicking the LEARN MORE link below " +
+            emoji
+        );
+      }
+
+      let buttonElement = document.querySelector("button");
+      buttonElement.addEventListener("click", handleClick);
+    </script>
+  </body>
+</html>
